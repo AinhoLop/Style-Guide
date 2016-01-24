@@ -1,0 +1,408 @@
+
+html {
+height: 100%;
+overflow-x: hidden;
+}
+
+body{
+perspective: 1px;
+transform-style: preserve-3d;
+height: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+margin: 0;
+background-color: #222;
+}
+
+.content{
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+}
+
+/*PARALLAS*/
+
+.slide {
+  position: relative;
+  min-height: 130vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+#title {
+  background: #222;
+  background-attachment: fixed;  
+}
+
+#slide1:before {
+  background: #fff;
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2:before {
+  background: #c3c3c3;
+
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+
+
+/*MENU***********************************************************/
+
+.menu{
+        background-color:#0cb0d4;
+        width: 200px;
+        height: 300px;
+        float: left;top;
+        margin: 0px;
+        padding: 0px;
+}
+.menu img{
+
+        margin-top: 20px;
+        margin-left: 5px;
+}
+
+.menu ul{
+
+	list-style: none;
+	margin-top: 30px;
+}
+.menu a{
+
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 2;
+        letter-spacing: 2px;
+}
+
+.menu a:hover{
+	color: #d0d0d0;	
+}
+
+/***********************************************/
+
+.guiaestilos h1{
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-size: 50px;
+float:right;
+margin-right: 100px;
+}
+
+/*TIPOGRAFÍAS*/
+
+.titulosweb h2{
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-size: 35px;
+clear: right;
+margin-left: 300px;
+}
+
+.hind a{
+font-family: 'Hind', sans-serif;
+color: #FFFFFF;
+text-align: left;
+margin-left: 100px;
+font-size: 20px;
+}
+
+.titulos section {
+font-family: 'Hind', sans-serif;
+color: #FFFFFF;
+text-align: left;
+margin-top: 20px;
+margin-left: 300px;
+border-bottom: 1px solid;
+border-top: 1px solid;
+width: 800px;
+}
+
+.parrafo p{
+font-family: 'Hind', sans-serif;
+color: #FFFFFF;
+text-align: left;
+text-align: justify;
+margin-top: 20px;
+margin-left: 300px;
+width: 800px;
+}
+
+/**********************************/
+
+/*COLORES*/
+
+.titulosweb2 h2{
+color: #222;
+font-family: "Roboto", sans-serif;
+font-size: 35px;
+clear: right;
+margin-left: 300px;
+margin-top: 70px;
+}
+
+.azulclaro{
+width: 100px;
+height: 100px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+background: #0cb0d4;
+float: left;
+}
+
+.azul{
+width: 100px;
+height: 100px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+background: #0c9fd4;
+float: left;
+margin-left: 35px;
+}
+
+.grisclaro{
+width: 100px;
+height: 100px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+background: #bcbcbc;
+float: left;
+margin-left: 35px;
+}
+
+.gris{
+width: 100px;
+height: 100px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+background: #626262;
+float: left;
+margin-left: 35px;
+}
+
+.negro{
+width: 100px;
+height: 100px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+background: #222;
+float: left;
+margin-left: 35px;
+}
+
+.azulclaro p{
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 30px;
+}
+
+.azul p{
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 30px;
+}
+
+.grisclaro p{
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 30px;
+}
+
+.gris p{
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 30px;
+}
+
+.negro p{
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 30px;
+}
+
+/**********************************/
+
+/*BOTONES*/
+
+.titulosweb3 h2{
+color: #3C3C3C;
+font-family: "Roboto", sans-serif;
+font-size: 35px;
+clear: right;
+margin-left: 300px;
+margin-top: 70px;
+}
+
+.botonazul{
+width: 200px;
+height: 50px;
+background: #0c9fd4;
+clear: right;
+margin-left: 300px;
+margin-top: 0px;
+float: left;
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 0px;
+}
+
+.botonegro{
+width: 200px;
+height: 50px;
+background: #222;
+clear: right;
+margin-top: 0px;
+margin-left: 25px;
+float: left;
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 0px;
+}
+
+.botonazul a:hover{
+        color: #0cb0d4; 
+}
+
+/*CONTACTO*/
+
+.titulosweb4 h2{
+
+color: #3C3C3C;
+font-family: "Roboto", sans-serif;
+font-size: 35px;
+clear: left;
+float: left;
+margin-top: 100px;
+margin-left: 300px;
+
+}
+
+
+
+.nombre{
+width: 800px;
+height: 45px;
+background: #818181;
+clear: left;
+margin-left: 300px;
+margin-top: 25px;
+float: left;
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: left;
+padding-top: 0px;
+opacity: 50%;
+border-radius: 5px;
+}
+
+.email{
+width: 800px;
+height: 45px;
+background: #818181;
+clear: left;
+margin-left: 300px;
+margin-top: 25px;
+float: left;
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: left;
+padding-top: 0px;
+border-radius: 5px;
+}
+
+.comentario{
+width: 800px;
+height:250px;
+background: #818181;
+clear: left;
+margin-left: 300px;
+margin-top: 25px;
+float: left;
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: left;
+padding-top: 0px;
+border-radius: 5px;
+}
+
+.nombre p{
+margin-left: 10px;
+}
+.email p{
+margin-left: 10px;
+}
+.comentario p{
+margin-left: 10px;
+}
+
+.enviar{
+width: 150px;
+height: 50px;
+background: #0c9fd4;
+clear: left;
+margin-right: 275px;
+margin-top: 25px;
+float: right;
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+color: #fff;
+text-align: center;
+padding-top: 0px;}
+
+
+/**********************************/
+
